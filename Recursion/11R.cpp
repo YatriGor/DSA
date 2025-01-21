@@ -6,7 +6,7 @@ using namespace std;
 int len;
 
 void swapArr(int i, int Arr[]){
-    if(i>len/2) return;
+    if(i>=len/2) return;
     swap(Arr[i], Arr[len-1-i]);
     swapArr(i+1, Arr);
 }
